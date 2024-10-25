@@ -41,8 +41,8 @@
                     <div class="row align-items-center no-gutters">
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo-img">
-                                <a href="index.html">
-                                    <img src="https://spiretecsolutions.com/uploads/homepage/1717564641131241864.png" alt="" style="width: 100%;">
+                                <a href="{{ route('home') }}">
+                                    <img src="https://spiretecsolutions.com/uploads/homepage/1717564641131241864.png" alt="" style="width: 100%; padding:10px;">
                                 </a>
                             </div>
                         </div>

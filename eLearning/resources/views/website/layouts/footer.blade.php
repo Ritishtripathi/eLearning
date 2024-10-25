@@ -11,9 +11,7 @@
                                 </a>
                             </div>
                             <p>
-                                Firmament morning sixth subdue darkness creeping gathered divide our let god moving.
-                                Moving in fourth air night bring upon it beast let you dominion likeness open place day
-                                great.
+                            Our eLearning site offers comprehensive courses across various domains, designed for flexible learning at your own pace. Gain industry-relevant skills and certifications with expert-led content accessible anytime, anywhere.
                             </p>
                             <div class="socail_links">
                                 <ul>
@@ -77,9 +75,7 @@
                                 Address
                             </h3>
                             <p>
-                                200, D-block, Green lane USA <br>
-                                +10 367 467 8934 <br>
-                                edumark@contact.com
+                            A - 2301 Gaur City 2 Noida, Extension, Greater Noida, Uttar Pradesh 201307, India
                             </p>
                         </div>
                     </div>
@@ -93,7 +89,7 @@
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <a href="https://spireweb.co.in/" target="_blank">Spireweb</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>

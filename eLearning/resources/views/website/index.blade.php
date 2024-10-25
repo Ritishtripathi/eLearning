@@ -1,11 +1,12 @@
 
 @extends('website.layouts.app')
+@section('content')
     <!-- slider_area_start -->
     <div class="slider_area ">
         <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
-                    <div class="col-xl-6 col-md-6">
+                  <div class="col-xl-6 col-md-6">
                         <div class="illastrator_png">
                             <img src="{{ asset('website/img/banner/edu_ilastration.png') }}" alt="">
                         </div>
@@ -15,7 +16,7 @@
                             <h3>Learn your <br>
                                 Favorite Course <br>
                                 From Online</h3>
-                            <a href="#" class="boxed_btn">Browse Our Courses</a>
+                            <a href="{{ route('courses') }}" class="boxed_btn">Browse Our Courses</a>
                         </div>
                     </div>
                 </div>
@@ -1718,5 +1719,6 @@
     <!-- our_courses_end -->
 
    
+    @endsection
 
    
