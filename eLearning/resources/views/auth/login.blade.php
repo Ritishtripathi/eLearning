@@ -1,31 +1,33 @@
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>Login</title>
     <link href="{{ asset('admin/css/login.css') }}" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
-  <div class="login-box">
-        <div class="left">
-            <form class="form">
-                <div class="input-block">
-                    <input class="input" type="text" id="email" required="">
-                    <label for="email">Username</label>
-                </div>
-                <div class="input-block">
-                    <input class="input" type="password" id="pass" required="">
-                    <label for="pass">Password</label>
-                </div>
-                <div class="input-block">
-<span class="forgot"><a href="#">Forgot Password?</a></span>
-                <button>Submit</button>
+        <div class="login-box">
+            <div class="left">
+                <form class="form" action="{{ route('login.post') }}" method="POST">
+                    @csrf <!-- Add CSRF protection token -->
+                    <div class="input-block">
+                        <input class="input" type="text" id="email" name="email" required>
+                        <label for="email">Username</label>
+                    </div>
+                    <div class="input-block">
+                        <input class="input" type="password" id="pass" name="password" required>
+                        <label for="pass">Password</label>
+                    </div>
+                    <div class="input-block">
+                        <span class="forgot">New User?<a href="{{ route('register') }}"> Register here</a></span> 
+                        <button type="submit" class="btn-submit">Submit</button> <!-- Add class for button styling -->
+                    </div>
+                </form>
             </div>
-            </form>
-        </div>
-        <div class="right">
+            <div class="right">
             <div class="img"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 731.67004 550.61784" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <path d="M0,334.13393c0,.66003,.53003,1.19,1.19006,1.19H730.48004c.65997,0,1.19-.52997,1.19-1.19,0-.65997-.53003-1.19-1.19-1.19H1.19006c-.66003,0-1.19006,.53003-1.19006,1.19Z" fill="#3f3d56"></path>
                     <polygon points="466.98463 81.60598 470.81118 130.55703 526.26809 107.39339 494.98463 57.60598 466.98463 81.60598" fill="#a0616a"></polygon>
@@ -68,9 +70,8 @@
                     <path id="uuid-c026fd96-7d81-4b34-bb39-0646c0e08e96-204" d="M465.67391,331.01678c-12.74718,6.63753-26.5046,5.44058-30.72743-2.67249-4.22283-8.11308,2.6878-20.06802,15.44041-26.70621,5.05777-2.72156,10.69376-4.19231,16.43644-4.28916l54.36547-27.44139,10.79681,21.52636-53.36733,28.57487c-3.37375,4.65048-7.81238,8.42516-12.94437,11.00803Z" fill="#a0616a"></path>
                     <path d="M527.48463,97.10598s56-3,68,27c12,30,22,128,22,128l-122,66.37402-21-32.37402,82-64-29-125Z" fill="#3f3d56"></path>
                 </svg></div>
-
+            </div>
         </div>
-    </div>
     </div>
 </body>
 </html>

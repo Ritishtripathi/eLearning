@@ -18,7 +18,7 @@ return [
     |
     */
 
-    'driver' => env('SESSION_DRIVER', 'database'),
+    'driver' => env('SESSION_DRIVER', 'file'),
 
     /*
     |--------------------------------------------------------------------------
@@ -32,9 +32,8 @@ return [
     |
     */
 
-    'lifetime' => env('SESSION_LIFETIME', 120),
-
-    'expire_on_close' => env('SESSION_EXPIRE_ON_CLOSE', false),
+  'lifetime' => 120, // Set this to a suitable number of minutes
+  'expire_on_close' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -156,7 +155,7 @@ return [
     |
     */
 
-    'domain' => env('SESSION_DOMAIN'),
+   'domain' => env('SESSION_DOMAIN', null), // Leave null for localhost or IP-based access
 
     /*
     |--------------------------------------------------------------------------
