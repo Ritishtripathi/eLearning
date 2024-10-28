@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\WebsiteController;
-use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Admin\AdminController;
 use Illuminate\Support\Facades\Route;
 
 // Home route
@@ -19,9 +19,6 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register');
 Route::post('/register', [AuthController::class, 'register'])->name('register.post');
 
-
-// User and Admin Dashboard Routes
-Route::middleware(['auth'])->group(function () {
-    Route::get('/user/dashboard', [WebsiteController::class, 'userDashboard'])->name('user.dashboard');
-    Route::get('/admin/dashboard', [AdminController::class, 'index'])->middleware('checkAdmin')->name('admin.dashboard');
-});
+// Admin routes
+Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard')->middleware('auth');
+Route::get('/user/dashboard', [WebsiteController::class, 'userDashboard'])->name('user.dashboard')->middleware('auth');

@@ -16,10 +16,9 @@ class WebsiteController extends Controller
     public function course_details(){
         return view('website.course_details');
     }
-    public function userDashboard()
-{
+    public function userDashboard(){
     return view('user.dashboard'); // Create this view
-}
-
+    }
+    
    
 }

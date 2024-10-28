@@ -55,10 +55,8 @@
             <div class=" dropdown-header noti-title">
               <h6 class="text-overflow m-0">Welcome!</h6>
             </div>
-            <a href="#!" class="dropdown-item">
-              <i class="ni ni-user-run"></i>
-              <span>Logout</span>
-            </a>
+           
+      
           </div>
         </li>
       </ul>
@@ -128,6 +126,15 @@
               <i class="ni ni-circle-08 text-pink"></i> Register
             </a>
           </li>
+          <li class="nav-item">
+    <form action="{{ route('logout') }}" method="POST" style="display: inline;">
+        @csrf
+        <button type="submit" class="nav-link" style="border: none; background: none; color: inherit; padding: 0; cursor: pointer;">
+            <i class="ni ni-circle-08 text-pink"></i> Logout
+        </button>
+    </form>
+</li>
+
         </ul>
        
       </div>
